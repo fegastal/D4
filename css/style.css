@@ -131,5 +131,5 @@ section.funcionarios {
 
     nav div:nth-child (3) {
         header {
-            background-image:url(../images/abacaxi.jpg);
+            background-image: url(../images/abacaxi.jpg);
         }
