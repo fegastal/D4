@@ -1,10 +1,10 @@
 body {
     display: grid;
     grid-template-areas: 'navbar'
-                         'banner'
-                         'main'
-                         'section'
-                         'footer';
+                        'banner'
+                        'main'
+                        'section'
+                        'footer';
     grid-template-columns: 100vw;
     margin: 0;
 
@@ -31,6 +31,7 @@ main {
 
 main h1, main p {
     text-align: center;
+
 }
 
 nav {
@@ -41,7 +42,6 @@ nav {
     height: 45px;
     justify-content: space-between;
 
-
 }
 
 nav div {
@@ -49,6 +49,19 @@ nav div {
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
+    padding: 0 10px;
+}
+
+nav div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+
+}
+
+nav div:nth-child(3) {
+    display: none; 
 }
 
 nav div span {
@@ -75,6 +88,26 @@ section .funcionarios div img {
 
 }
 
+@media(min-width: 580px) {
+    header { 
+        background-image: url(../images-siricascudo.jpg);
+    }
+
+nav div a {
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+nav div:nth-child(2) {
+    display: none;
+
+}
+
+nav div:nth-child(3) {
+    display: block;
+}
+
+
 section.funcionarios {
     display: flex;
     flex-wrap: wrap;
@@ -82,3 +115,21 @@ section.funcionarios {
     justify-content: center;
 
 }
+
+@media (min-width: 710px) {
+    header {
+        background-image: url(../images/Siri-Cascudo-Lanches.png);
+    }
+    nav div a {
+        font-size: 14pt;
+        text-decoration: none;
+
+    }
+    nav div:nth-child (2) {
+        display: none;
+    }
+
+    nav div:nth-child (3) {
+        header {
+            background-image:url(../images/abacaxi.jpg);
+        }
